@@ -1,14 +1,62 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     color: #333;
-    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.feedback-form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 5px;
+}
+
+.feedback-form input, 
+.feedback-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback-form button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #218838;
 }
 
 .message {
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .success {
@@ -23,18 +71,11 @@ body {
     border: 1px solid #f5c6cb;
 }
 
-.file-content,
-.file-lines {
+.file-content {
+    margin-top: 20px;
+    padding: 10px;
     background-color: #fff;
-    padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-}
-
-pre {
-    margin: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
 }
